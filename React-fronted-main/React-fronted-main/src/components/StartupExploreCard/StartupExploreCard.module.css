@@ -1,0 +1,134 @@
+.startup-card-wrapper {
+    min-height: 350px;
+    background-color: #1f2833;
+    border: 1px solid #2e3a48;
+    border-radius: 12px;
+    padding: 1.75rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    margin-top : 0.3rem;
+    margin-right:1rem;
+
+
+}
+
+.startup-card-wrapper:hover {
+    transform: translateY(-5px);
+    border-color: #45a29e;
+}
+
+.startup-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 1rem;
+    line-height: 1.2;
+}
+
+.startup-description-container {
+    height: 72px;
+    margin-bottom: 1.5rem;
+
+}
+
+
+.startup-description {
+    font-size: 0.95rem;
+    color: #c5c6c7;
+    line-height: 1.6;
+    margin: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+
+
+.bottom-section {
+    flex-shrink: 0;
+}
+
+.funding-goal {
+    margin-bottom: 1rem;
+}
+
+.funding-goal-description {
+    font-size: 0.9rem;
+    color: #c5c6c7;
+    margin-bottom: 0.5rem;
+}
+
+
+.view-details-button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, #45a29e, #66fcf1);
+    color: #0b0c10;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.view-details-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 252, 241, 0.25);
+}
+
+.founder-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-top: 1rem;
+    border-top: 1px solid #2e3a48;
+}
+
+
+.founder-avatar-wrapper {
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 2px;
+    transition: all 0.2s ease;
+}
+
+.founder-avatar-wrapper:hover {
+    background-color: #66fcf1;
+}
+
+.founder-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #1f2833;
+    display: block;
+}
+
+.founder-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.founder-name {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.founder-title {
+    color: #8f9296;
+    font-size: 0.8rem;
+}

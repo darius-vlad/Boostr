@@ -1,0 +1,211 @@
+
+.nav-bar {
+    background-color: #1f2833;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 2.5rem;
+    height: 70px;
+    border-bottom: 1px solid #2e3a48;
+}
+
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+}
+
+.logo {
+    height: 45px;
+    width: auto;
+}
+
+.product-name {
+    color: #ffffff;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.links a {
+    color: #c5c6c7;
+    position: relative;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.links a:hover {
+    color: #66fcf1;
+}
+
+
+.links > a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #66fcf1;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.links > a:hover::before {
+    transform: scaleX(1);
+}
+
+
+.auth-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-link-secondary {
+    padding: 0.5rem 1rem;
+}
+
+.nav-link-primary {
+    background-color: #45a29e;
+    color: #0b0c10 !important;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-link-primary:hover {
+    background-color: #66fcf1;
+    transform: translateY(-2px);
+    color: #0b0c10 !important;
+}
+
+.nav-link-primary::before, .nav-link-secondary::before {
+    content: none;
+}
+
+
+.popper-menu {
+    z-index: 1301;
+}
+
+
+.popper-menu .MuiPaper-root {
+    background-color: #2e3a48 !important;
+    border: 1px solid #45a29e !important;
+    border-radius: 8px !important;
+    margin-top: 8px !important;
+}
+
+
+.popper-menu .MuiMenuItem-root {
+    color: #c5c6c7 !important;
+    font-weight: 500 !important;
+    padding: 10px 20px !important;
+    transition: background-color 0.2s ease !important;
+}
+
+.popper-menu .MuiMenuItem-root:hover {
+    background-color: rgba(69, 162, 158, 0.4) !important;
+}
+
+
+.hamburger-button {
+    display: none;
+    background: none;
+    border: none;
+    color: #66fcf1;
+    font-size: 1.75rem;
+    cursor: pointer;
+    z-index: 1500;
+}
+
+
+.mobile-close-button {
+    display: none;
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    background: none;
+    border: none;
+    color: #c5c6c7;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+
+    .nav-bar {
+        padding: 0.75rem 1.5rem;
+    }
+
+    .hamburger-button {
+        display: block;
+    }
+
+    .links {
+
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+
+        background-color: #1f2833;
+
+
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+
+        z-index: 1400;
+    }
+
+    .links.mobile-menu-open {
+        transform: translateX(0);
+    }
+
+    .mobile-close-button {
+        display: block;
+    }
+
+
+    .links a {
+        font-size: 1.25rem;
+    }
+
+
+    .auth-links {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+
+    .links > a::before {
+        display: none;
+    }
+
+
+    .popper-menu {
+
+        position: fixed !important;
+    }
+}

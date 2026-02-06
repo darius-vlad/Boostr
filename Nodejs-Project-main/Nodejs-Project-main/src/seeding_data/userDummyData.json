@@ -1,0 +1,25 @@
+[
+  {
+    "name": "user1",
+    "email": "user1@gmail.com",
+    "password": "password1",
+    "profile_bio": "EX Amazon SWE"
+  },
+  {
+    "name": "user2",
+    "email": "user2@gmail.com",
+    "password": "password2",
+    "profile_bio": "Meta Full Stack Developer"
+  },
+  {
+    "name": "user3",
+    "email": "user3@gmail.com",
+    "password": "password3",
+    "profile_bio": "BitStone DevOps Engineer"
+  },
+  {
+    "name": "admin1",
+    "email": "admin1@gmail.com",
+    "password": "password_admin1"
+  }
+]
